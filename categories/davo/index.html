@@ -1,0 +1,383 @@
+<!doctype html>
+<!--Conditionals for IE8-9 Support-->
+<!--[if IE]>
+<html lang="en" class="ie"><![endif]-->
+<!--[if IE8]>
+<html lang="en" class="ie8"><![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>PWND | Category: davo</title>
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Fast action, team based, competitive FPS where Death is temporary but Humiliation is forever!"/>
+    <meta name="keywords" content="PWND, first person shooter, video game, fps, The Workshop, rocket jumping, pwning"/>
+    <meta name="author" content="The Workshop Entertainment, Inc."/>
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/img/PwnMan.ico" type="image/x-icon">
+    <link rel="icon" href="/img/PwnMan.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/masterslider/style/masterslider.css" type="text/css">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+    <!--Modernizr-->
+    <script src="/js/modernizr.custom.js" type="text/javascript"></script>
+
+    <!--Adding Media Queries Support for IE8-->
+    <!--[if lt IE 9]>
+    <script src="/js/lib/respond/respond.min.js" type="text/javascript"></script>
+
+    <![endif]-->
+</head>
+
+<!--Body-->
+<body class="parallax animated fadeIn">
+
+<!--Off-Canvas-->
+<div class="off-canvas-wrap" data-offcanvas>
+<div class="inner-wrap age-gate">
+    <!--Page Content-->
+    <div class="page">
+        <section style="background-image:url(/img/home/hero/parallax/parallax-1.jpg);"
+                 class="hero-static fullscreen" data-stellar-background-ratio="0.5">
+            <div class="inner">
+                <div class="container">
+                    <div class="col-md-6 col-md-offset-6 text-center">
+                        <img class="img-responsive" src="/img/logo-white.png" alt="PWND"/>
+                        <form method="post">
+                            <input type="text" class="form-control input-lg" name="month" id="month" pattern=".{1,}" placeholder="MM" maxlength="2" required autofocus /> <span class="light-color">/</span>
+                            <input type="text" class="form-control input-lg" name="day" id="day" pattern=".{1,}" placeholder="DD"  maxlength="2" required /> <span class="light-color">/</span>
+                            <input type="text" class="form-control input-lg" name="year" id="year" pattern=".{4,}" title="Please enter a four digit year" placeholder="YYYY" maxlength="4" required />
+                            <p class="space-top">
+                                <button id="age-gate-submit" type="submit" class="btn btn-outlined-invert btn-lg">ENTER</button>
+                            </p>
+                        </form>
+                        <div class="restricted">
+                            <p>Access Denied.</p>
+                            <p>Please view our <a href="#">privacy policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="inner-wrap restricted">
+
+<!--Off-Canvas Menu-->
+<aside class="left-off-canvas-menu">
+    <div class="mobile-navi">
+        <ul>
+            <li class="current"><a href="/">HOME</a></li>
+            <li><a href="#">GAME</a><span></span>
+                <ul class="submenu">
+                    <li><a href="/post/pwnd-overview/">OVERVIEW</a></li>
+                    <li><a href="/game/characters/">CHARACTERS</a></li>
+                    <li><a href="/post/pwnd-gameplay/">GAMEPLAY</a></li>
+                </ul>
+            </li>
+            <li><a href="/media/">MEDIA</a></li>
+            <li><a href="/news/">NEWS</a></li>
+            <li><a href="/post/faq/">FAQ</a></li>
+            <li><a href="#">SIGN UP</a><span></span>
+                <ul class="submenu">
+                    <li>
+                        <form class="validate mobile-signup" method="post"
+                              action="http://8guild.us3.list-manage1.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=06b7eb4e02"
+                              id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+                              novalidate>
+                            <label class="sr-only" for="mce-EMAIL"></label>
+                            <input type="email" class="form-control input-lg" name="EMAIL" id="mce-EMAIL"  placeholder="Email" required>
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_168a366a98d3248fbc35c0b67_06b7eb4e02" tabindex="-1" value=""></div>
+                            <button class="btn btn-primary btn-block" type="submit" name="mc-embedded-subscribe" id="mc-embedded-subscribe">Submit</button>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="text-success" href="http://steamcommunity.com/greenlight" target="_blank">
+                    <small>VOTE FOR US ON</small>
+                    <p>STEAM GREENLIGHT</p>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.facebook.com/pwndgame" target="_blank"><i class="fa fa-facebook"></i> &nbsp;&nbsp;LIKE</a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com/pwndgame" target="_blank"><i class="fa fa-twitter"></i> FOLLOW</a>
+            </li>
+        </ul>
+    </div>
+</aside>
+<!--Off-Canvas Menu Close-->
+
+<!--Layout-->
+<div class="site-layout">
+
+<!--Header-->
+<header class="header opaque sticky">
+    <!--Adding class "transparent" to header makes it transparent and it sticks to top. Header becomes opaque on scroll. Please note in a "boxed" mode header doesn't stick to the top.-->
+    <div class="inner">
+        <div class="container group">
+
+            <!--Logo-->
+            <a class="logo" href="/"><img src="/img/logo-white.png" data-logo-default="/img/logo.png" data-logo-alt="/img/logo-white.png" alt="PWND"/></a>
+
+            <!--Navigation Toggle-->
+            <div class="left-off-canvas-toggle" id="nav-toggle">
+                <span></span>
+            </div>
+
+            <!--Site Navigation-->
+            <div class="navigation">
+                <!--Menu-->
+                <nav class="menu">
+                    <ul>
+                        <li ><a class="popovered" href="#" tabindex="0" data-toggle="popover" data-placement="bottom"
+                               data-trigger="hover focus click" data-html="true"
+                               data-content="<a href='/post/pwnd-overview/'>Overview</a> <a href='/game/characters/'>Characters</a> <a href='/post/pwnd-gameplay/'>Gameplay</a>">GAME</a></li>
+                        <li ><a href="/media/">MEDIA</a></li>
+                        <li class="active"><a href="/news/">NEWS</a></li>
+                        <li ><a href="/post/faq/">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--Tools-->
+            <div class="tools group">
+                <a id="qcf-btn" class="signup pull-left" href="#">Sign Up</a>
+                <!-- Begin MailChimp Signup Form -->
+                <form action="//theworkshop.us9.list-manage.com/subscribe/post?u=8a7d585bd60a75dab894fa64a&amp;id=7bb02307cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate quick-contact" target="_blank" novalidate>
+                    <p>Sign up to get the latest info on our beta release.</p>
+                    <label for="mce-EMAIL"></label>
+                    <input type="email" name="EMAIL" class="form-control input-lg" placeholder="Email" id="mce-EMAIL">
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_8a7d585bd60a75dab894fa64a_7bb02307cc" tabindex="-1" value=""></div>
+                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe"><i class="fa fa-angle-right"></i></button>
+                </form>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End MailChimp Signup Form -->
+                <div class="social-actions">
+                    <ul>
+                        <li>
+                            <a class="steam-greenlight pull-left" href="http://steamcommunity.com/greenlight" target="_blank">
+                                <div class="col-md-3 vote-label">Vote</div>
+                                <div class="col-md-9 vote-body">
+                                    Steam Greenlight
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li class="pull-left">
+                                    <div class="fb-like" data-href="https://www.facebook.com/pwndgame" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                </li>
+                                <li class="twitter-follow pull-left">
+                                    <a href="https://twitter.com/pwndgame" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @pwndgame</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Tools Close-->
+        </div>
+    </div>
+
+</header>
+<!--Header Close-->
+
+<div class="page blog gray-bg light-color">
+    <!--Blog Full Width List View-->
+    <section class="list-view double-padding-bottom double-padding-top">
+        <div class="container">
+            
+            <div class="row post">
+    <div class="col-md-3 col-sm-4  featured-img-holder">
+        <div class="featured-img">
+    <a title="Hello World" href="/post/hello-world/">
+        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="Hello World"/>
+    </a>
+
+    
+    <div class="meta">
+        <i class="fa fa-comments-o"></i><a href="/post/hello-world/#disqus_thread">0 Comments</a>
+    </div>
+    
+</div>
+
+    </div>
+    <div class="col-md-9 col-sm-8">
+        
+<h3><a href="/post/hello-world/">Hello World</a></h3>
+
+
+<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+
+<span class="devider"></span>
+
+        <div class="meta group">
+            <div class="left">
+                
+<a href="/categories/davo/">davo</a>
+
+
+<span class="text-muted">in&nbsp;</span>
+
+
+<a href="/tags/gameplay/">#gameplay</a>
+
+<a href="/tags/beta/">#beta</a>
+
+<a href="/tags/steamgreenlight/">#steamgreenlight</a>
+
+
+            </div>
+            <div class="right"><span class="text-muted"><time datetime="2014-10-27T18:42:41.000Z" itemprop="datePublished">Oct 27 2014</time>
+</span></div>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+    </section>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row space-bottom">
+
+            <!--Contact Info-->
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 text-center">
+                <div class="contacts">
+                    <p><a href="http://www.theworkshop.us.com" target="_blank"><img src="/img/logos/theworkshop.png" /></a></p>
+                    <p>4223 Glencoe Ave Ste C210, Marina Del Rey, CA 90292</p>
+                    <p><a href="mailto:info@pwnd.com">info@pwnd.com</a></p>
+                    <div class="social-bar">
+                        <a href="#" class="tooltipped fa fa-facebook" data-placement="bottom" title="Facebook"></a>
+                        <a href="#" class="tooltipped fa fa-twitter" data-placement="bottom" title="Twitter"></a>
+                        <a href="#" class="tooltipped fa fa-youtube" data-placement="bottom" title="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <div class="container">
+            <ul class="clearfix">
+                <li>
+                    &copy; 2014
+                    <a href="http://www.theworkshop.us.com" target="_blank">The Workshop Entertainment, Inc.</a>
+                    All rights reserved.
+                </li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Copyright</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--Footer Close-->
+
+</div>
+<!--Layout Close-->
+
+<!-- close the off-canvas menu -->
+<a class="exit-off-canvas"></a>
+</div>
+</div>
+<!--Off-Canvas Close-->
+
+<!--Sticky Buttons-->
+<div class="sticky-btns">
+    <span id="scrollTop-btn"><i class="fa fa-chevron-up"></i></span>
+</div>
+<!--Sticky Buttons Close-->
+
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1417765901801848&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pwnd'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<!--Javascript (jQuery) Libraries and Plugins-->
+<script src="/js/lib/jquery/jquery.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-easing/jquery.easing.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-numerator/jquery-numerator.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-placeholder/jquery.placeholder.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-validate/jquery.validate.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-waypoints/waypoints.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery-waypoints/waypoints-sticky.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery.breakpoints/breakpoints.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery.countdown/jquery.countdown.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/jquery.stellar/jquery.stellar.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/chartjs/Chart.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/easy-pie-chart/jquery.easypiechart.js" type="text/javascript"></script>
+
+<script src="/js/lib/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/isotope/isotope.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/lightgallery/lightGallery.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/nouislider/jquery.nouislider.all.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/parallax/jquery.parallax.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/spriteOnHover/jquery.spriteOnHover-0.2.5.min.js" type="text/javascript"></script>
+
+<script src="/js/lib/foundation/foundation.min.js" type="text/javascript"></script>
+
+<script src="/js/smoothscroll.js" type="text/javascript"></script>
+
+<script src="/js/masterslider.min.js" type="text/javascript"></script>
+
+<script src="/js/scripts.js" type="text/javascript"></script>
+
+
+
+
+
+</body>
+
+</html>
