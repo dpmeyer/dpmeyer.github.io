@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>PWND</title>
+    <title>PWND | Media</title>
     <!--SEO Meta Tags-->
     <meta name="description" content="Fast action, team based, competitive FPS where Death is temporary but Humiliation is forever!"/>
     <meta name="keywords" content="PWND, first person shooter, video game, fps, The Workshop, rocket jumping, pwning"/>
@@ -127,7 +127,7 @@
 <div class="site-layout">
 
 <!--Header-->
-<header class="header transparent">
+<header class="header opaque sticky">
     <!--Adding class "transparent" to header makes it transparent and it sticks to top. Header becomes opaque on scroll. Please note in a "boxed" mode header doesn't stick to the top.-->
     <div class="inner">
         <div class="container group">
@@ -148,7 +148,7 @@
                         <li ><a class="popovered" href="#" tabindex="0" data-toggle="popover" data-placement="bottom"
                                data-trigger="hover focus click" data-html="true"
                                data-content="<a href='/post/pwnd-overview/'>Overview</a> <a href='/game/characters/'>Characters</a> <a href='/post/pwnd-gameplay/'>Gameplay</a>">GAME</a></li>
-                        <li ><a href="/media/">MEDIA</a></li>
+                        <li class="active"><a href="/media/">MEDIA</a></li>
                         <li ><a href="/news/">NEWS</a></li>
                         <li ><a href="/post/faq/">FAQ</a></li>
                     </ul>
@@ -198,163 +198,102 @@
 <!--Header Close-->
 
 <!--Page Content-->
-<div class="page">
+<div class="page neo-bg light-color double-padding-bottom">
 
-    <!--Fullscreen Hero-->
-    <!--Adding class "fullscreen" makes hero height equals window height-->
-    <section style="background-image:url(/img/home/hero/parallax/parallax-2.jpg);" class="hero-static fullscreen" data-stellar-background-ratio="0.5">
-        <div class="inner">
-            <div class="content">
-                <div class="container">
-                    <div class="trailer col-md-12 col-md-offset-0 col-lg-10 col-lg-offset-1 double-space-top">
-                        <h4 class="light-color text-left"><strong>PWND Trailer</strong></h4>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <img src="/img/demo/trailer.png" class="img-responsive"/>
-                            <!--iframe width="1280" height="720" src="http://www.youtube.com/embed/z5PZcU9VE2k" frameborder="0" allowfullscreen></iframe-->
-                        </div>
+    <!--Masonry Gallery Grid-->
+    <section>
+        <div class="container">
+            <div class="page-heading center">
+                <h2 class="light-color"><strong>MEDIA</strong></h2>
+            </div>
+            <!--Filters-->
+            <ul class="filters">
+                <li class="current"><a href="#" data-filter="*">View All</a></li>
+                <li><a href="#" data-filter=".trailer">Trailer</a></li>
+                <li><a href="#" data-filter=".gameplay">Gameplay</a></li>
+                <li><a href="#" data-filter=".screenshots">Screenshots</a></li>
+            </ul>
+            <!--Gallery Grid-->
+            <div class="gallery-grid masonry">
+                <div class="grid-sizer"></div>
+                <div class="lightGallery">
+                    <!--In order to add lightbox gallery wrap grid in a div "lightGallery" and add "data-src" to each ".item"-->
+                    <div class="item width2 trailer gameplay"
+                         data-src="http://www.youtube.com/embed/z5PZcU9VE2k"
+                         data-title="PWND Trailer">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_1.png" alt="01"/>
+                            <figcaption>
+                                <h3>PWND <span>Trailer</span></h3>
+
+                                <p>Death is temporary. Humiliation is forever!</p>
+                                <a href="/img/gallery/masonry/1.jpg">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item trailer" data-src="../img/gallery/masonry/3.jpg" data-title="Meet PWNBot">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_3.png" alt="03"/>
+                            <figcaption>
+                                <h3>Meet <span>PWNBot</span></h3>
+
+                                <a href="/img/gallery/masonry/3.jpg">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item trailer" data-src="../img/gallery/masonry/2.jpg"
+                         data-title="PWNMASTER X">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_2.png" alt="02"/>
+                            <figcaption>
+                                <h3>PWNMASTER <span>X</span></h3>
+
+                                <p>For the most hardcore PWNing workout ever!</p>
+                                <a href="/img/gallery/masonry/2.jpg">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item gameplay" data-src="../img/gallery/masonry/4.jpg"
+                         data-title="PWND Gameplay 1">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_4.png" alt="04"/>
+                            <figcaption>
+                                <h3>PWND <span>Gameplay 1</span></h3>
+
+                                <p>Neo New York</p>
+                                <a href="/img/gallery/masonry/4.jpg">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item width2 gameplay" data-src="../img/gallery/masonry/5.jpg"
+                         data-title="PWND Gameplay 2">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_5.png" alt="05"/>
+                            <figcaption>
+                                <h3>PWND <span>Gameplay 2</span></h3>
+
+                                <p>Channel</p>
+                                <a href="/img/gallery/masonry/5.jpg">View more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="item gameplay" data-src="../img/gallery/masonry/6.jpg"
+                         data-title="PWND Gameplay 3">
+                        <figure class="effect-01">
+                            <img src="/img/gallery/masonry/th_6.png" alt="06"/>
+                            <figcaption>
+                                <h3>PWND <span>Gameplay 3</span></h3>
+
+                                <p>The Curry PIT</p>
+                                <a href="/img/gallery/masonry/6.jpg">View more</a>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-footer">
-            <h4 class="light-color">
-                <i class="fa fa-angle-down"></i>
-                Latest News
-                <i class="fa fa-angle-down"></i>
-            </h4>
-        </div>
     </section>
-    <!--Fullscreen Hero Close-->
-
-    <!--Latest Blog Posts-->
-    <section class="page-block gray-bg double-padding-bottom">
-        <div class="container blog light-color">
-            <div class="row grid-view double-space-top double-space-bottom">
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="PWND Gameplay" href="/post/PWND-Gameplay/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="PWND Gameplay"/>
-    </a>
-
-    
-</div>
-
-        <footer>
-            
-<h3><a href="/post/PWND-Gameplay/">PWND Gameplay</a></h3>
-
-
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
-<a href="/categories/laralyn/">laralyn</a>
-
-
-<span class="text-muted">in&nbsp;</span>
-
-
-<a href="/tags/gameplay/">#gameplay</a>
-
-
-            </div>
-        </footer>
-    </div>
-</div>
-
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="PWND Overview" href="/post/PWND-Overview/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="PWND Overview"/>
-    </a>
-
-    
-</div>
-
-        <footer>
-            
-<h3><a href="/post/PWND-Overview/">PWND Overview</a></h3>
-
-
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
-<a href="/categories/laralyn/">laralyn</a>
-
-
-<span class="text-muted">in&nbsp;</span>
-
-
-<a href="/tags/overview/">#overview</a>
-
-
-            </div>
-        </footer>
-    </div>
-</div>
-
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="Hello World" href="/post/hello-world/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="Hello World"/>
-    </a>
-
-    
-    <div class="meta">
-        <i class="fa fa-comments-o"></i><a href="/post/hello-world/#disqus_thread">0 Comments</a>
-    </div>
-    
-</div>
-
-        <footer>
-            
-<h3><a href="/post/hello-world/">Hello World</a></h3>
-
-
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
-<a href="/categories/davo/">davo</a>
-
-
-<span class="text-muted">in&nbsp;</span>
-
-
-<a href="/tags/gameplay/">#gameplay</a>
-
-<a href="/tags/beta/">#beta</a>
-
-<a href="/tags/steamgreenlight/">#steamgreenlight</a>
-
-
-            </div>
-        </footer>
-    </div>
-</div>
-
-                
-                <div class="col-md-12 col-sm-12 text-center">
-                    <a href="/news/" class="btn btn-lg btn-info">More News</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Latest Blog Posts Close-->
+    <!--Masonry Gallery Grid Close-->
 
 </div>
 <!--Page Content Close-->

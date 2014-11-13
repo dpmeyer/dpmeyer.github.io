@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>PWND</title>
+    <title>PWND | Hello World</title>
     <!--SEO Meta Tags-->
     <meta name="description" content="Fast action, team based, competitive FPS where Death is temporary but Humiliation is forever!"/>
     <meta name="keywords" content="PWND, first person shooter, video game, fps, The Workshop, rocket jumping, pwning"/>
@@ -126,8 +126,9 @@
 <!--Layout-->
 <div class="site-layout">
 
+
 <!--Header-->
-<header class="header transparent">
+<header class="header opaque sticky">
     <!--Adding class "transparent" to header makes it transparent and it sticks to top. Header becomes opaque on scroll. Please note in a "boxed" mode header doesn't stick to the top.-->
     <div class="inner">
         <div class="container group">
@@ -149,7 +150,7 @@
                                data-trigger="hover focus click" data-html="true"
                                data-content="<a href='/post/pwnd-overview/'>Overview</a> <a href='/game/characters/'>Characters</a> <a href='/post/pwnd-gameplay/'>Gameplay</a>">GAME</a></li>
                         <li ><a href="/media/">MEDIA</a></li>
-                        <li ><a href="/news/">NEWS</a></li>
+                        <li class="active"><a href="/news/">NEWS</a></li>
                         <li ><a href="/post/faq/">FAQ</a></li>
                     </ul>
                 </nav>
@@ -197,138 +198,97 @@
 </header>
 <!--Header Close-->
 
-<!--Page Content-->
-<div class="page">
+<!-- Share Modal -->
+<div class="modal share-modal fade" id="shareModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content group">
+            <div class="bar facebook">
+                <span>Facebook</span>
+                <i class="fa fa-facebook"></i>
 
-    <!--Fullscreen Hero-->
-    <!--Adding class "fullscreen" makes hero height equals window height-->
-    <section style="background-image:url(/img/home/hero/parallax/parallax-2.jpg);" class="hero-static fullscreen" data-stellar-background-ratio="0.5">
-        <div class="inner">
-            <div class="content">
-                <div class="container">
-                    <div class="trailer col-md-12 col-md-offset-0 col-lg-10 col-lg-offset-1 double-space-top">
-                        <h4 class="light-color text-left"><strong>PWND Trailer</strong></h4>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <img src="/img/demo/trailer.png" class="img-responsive"/>
-                            <!--iframe width="1280" height="720" src="http://www.youtube.com/embed/z5PZcU9VE2k" frameborder="0" allowfullscreen></iframe-->
-                        </div>
-                    </div>
+                <div class="button">
+                    <a class="btn btn-md btn-outlined-invert btn-center" href="https://www.facebook.com/sharer/sharer.php?u=http://www.pwnd.com/post/hello-world/" target="_blank">Share</a>
+                </div>
+            </div>
+            <div class="bar twitter">
+                <span>Twitter</span>
+                <i class="fa fa-twitter"></i>
+
+                <div class="button">
+                    
+                    <a class="btn btn-md btn-outlined-invert btn-center" href="https://twitter.com/home?status=Hello%20World%20-%20http://www.pwnd.com/post/hello-world/%20via%20@pwndgame" target="_blank">Share</a>
+                </div>
+            </div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="bar google-plus">
+                <span>Google+</span>
+                <i class="fa fa-google-plus"></i>
+
+                <div class="button">
+                    <a class="btn btn-md btn-outlined-invert btn-center" href="https://plus.google.com/share?url=http://www.pwnd.com/post/hello-world/" target="_blank">Share</a>
+                </div>
+            </div>
+            <div class="bar pinterest">
+                <span>Pinterest</span>
+                <i class="fa fa-pinterest"></i>
+
+                <div class="button">
+                    <a class="btn btn-md btn-outlined-invert btn-center" href="https://pinterest.com/pin/create/button/?url=http://www.pwnd.com/post/hello-world/" target="_blank">Share</a>
+                </div>
+            </div>
+            <div class="bar mail">
+                <span>Email</span>
+                <i class="fa fa-envelope"></i>
+
+                <div class="button">
+                    <a class="btn btn-md btn-outlined-invert btn-center"
+                       href="mailto:?subject=I%20wanted%20you%20to%20see%20this&amp;body=http://www.pwnd.com/post/hello-world/">Send
+                        Email</a>
                 </div>
             </div>
         </div>
-        <div class="hero-footer">
-            <h4 class="light-color">
-                <i class="fa fa-angle-down"></i>
-                Latest News
-                <i class="fa fa-angle-down"></i>
-            </h4>
+    </div>
+</div>
+<!-- Share Modal -->
+
+
+<!--Page Content-->
+<div class="page gray-bg light-color">
+
+    <!--Fullwidth Image Banner-->
+    <section class="fw-img-banner light-text"
+             style="background-image:url(/img/home/hero/parallax/parallax-2.jpg);"
+             data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="page-heading center">
+                
+<h2>Hello World</h2>
+
+<h3>Welcome to Hexo!</h3>
+
+
+<p>This is your very first post.</p>
+
+
+
+            </div>
         </div>
     </section>
-    <!--Fullscreen Hero Close-->
+    <!--Fullwidth Image Banner Close-->
 
-    <!--Latest Blog Posts-->
-    <section class="page-block gray-bg double-padding-bottom">
-        <div class="container blog light-color">
-            <div class="row grid-view double-space-top double-space-bottom">
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="PWND Gameplay" href="/post/PWND-Gameplay/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="PWND Gameplay"/>
-    </a>
+    <!--Single Post-->
+    <section class="container space-top post-single">
+        <div class="row">
 
-    
-</div>
+            <!--Content-->
+            <section class="col-md-8">
 
-        <footer>
-            
-<h3><a href="/post/PWND-Gameplay/">PWND Gameplay</a></h3>
-
-
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
-<a href="/categories/laralyn/">laralyn</a>
-
-
-<span class="text-muted">in&nbsp;</span>
-
-
-<a href="/tags/gameplay/">#gameplay</a>
-
-
-            </div>
-        </footer>
-    </div>
-</div>
-
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="PWND Overview" href="/post/PWND-Overview/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="PWND Overview"/>
-    </a>
-
-    
-</div>
-
-        <footer>
-            
-<h3><a href="/post/PWND-Overview/">PWND Overview</a></h3>
-
-
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
-<a href="/categories/laralyn/">laralyn</a>
-
-
-<span class="text-muted">in&nbsp;</span>
-
-
-<a href="/tags/overview/">#overview</a>
-
-
-            </div>
-        </footer>
-    </div>
-</div>
-
-                
-                    <div class="col-md-4 col-sm-4">
-    <div class="post">
-        <div class="featured-img">
-    <a title="Hello World" href="/post/hello-world/">
-        <img src="/img/blog/posts/th_4.png" class="img-responsive" alt="Hello World"/>
-    </a>
-
-    
-    <div class="meta">
-        <i class="fa fa-comments-o"></i><a href="/post/hello-world/#disqus_thread">0 Comments</a>
-    </div>
-    
-</div>
-
-        <footer>
-            
-<h3><a href="/post/hello-world/">Hello World</a></h3>
-
-
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-
-<span class="devider"></span>
-
-
-            <div class="taxonomy">
-                
+                <!--Post Meta-->
+                <div class="post-meta double-space-bottom">
+                    <div class="taxonomy">
+                        <span class="text-muted">posted by&nbsp;</span>
+                        
 <a href="/categories/davo/">davo</a>
 
 
@@ -342,23 +302,123 @@
 <a href="/tags/steamgreenlight/">#steamgreenlight</a>
 
 
-            </div>
-        </footer>
-    </div>
+                    </div>
+                    <div class="date"><time datetime="2014-10-27T18:42:41.000Z" itemprop="datePublished">Oct 27 2014</time>
+</div>
+                </div>
+
+                <!--Post Content-->
+                <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+
+                <!--Post Toolbox-->
+                <div class="post-toolbox">
+                    <a href="#" data-toggle="modal" data-target="#shareModal"
+                       class="btn btn-md btn-outlined btn-primary">Recommend<i class="fa fa-heart-o right"></i></a>
+                    
+<div class="buttons">
+    
+    
+    <a href="/post/PWND-Overview/" class="tooltipped" data-placement="bottom" title="PWND Overview">
+        <i class="fa fa-arrow-right"></i>
+    </a>
+    
 </div>
 
-                
-                <div class="col-md-12 col-sm-12 text-center">
-                    <a href="/news/" class="btn btn-lg btn-info">More News</a>
                 </div>
+
+                
+                <!--Comment Form-->
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'pwnd'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <!--Comment Form Close-->
+                
+
+            </section>
+            <!--Content Close-->
+
+            <!--Sidebar-->
+            <div class="col-md-4 double-space-bottom" id="sidebar">
+                <aside class="sidebar right">
+
+                    <!--Categories-->
+                    <div class="widget categories">
+                        <h3>All Tags</h3>
+                        <a href="/tags/beta/" style="font-size: 10.00px;">beta</a><a href="/tags/gameplay/" style="font-size: 20.00px;">gameplay</a><a href="/tags/overview/" style="font-size: 20.00px;">overview</a><a href="/tags/steamgreenlight/" style="font-size: 10.00px;">steamgreenlight</a>
+                    </div>
+
+                    <!--Featured Posts-->
+                    <div class="widget featured-posts">
+                        <h3>Featured posts</h3>
+                        
+                        <div class="post">
+    <h5><a href="/post/hello-world/">Hello World</a></h5>
+    <span class="devider"></span>
+    <div class="meta group">
+        <div class="left">
+            
+<a href="/categories/davo/">davo</a>
+
+
+<span class="text-muted">in&nbsp;</span>
+
+
+<a href="/tags/gameplay/">#gameplay</a>
+
+<a href="/tags/beta/">#beta</a>
+
+<a href="/tags/steamgreenlight/">#steamgreenlight</a>
+
+
+        </div>
+        <div class="right"><span class="text-muted"><time datetime="2014-10-27T18:42:41.000Z" itemprop="datePublished">Oct 27 2014</time>
+</span></div>
+    </div>
+</div>
+                        
+                    </div>
+                </aside>
             </div>
+            <!--Sidebar Close-->
         </div>
     </section>
-    <!--Latest Blog Posts Close-->
+    <!--Single Post Content Close-->
+
+    <!--Sidebar Toggle-->
+    <a href="#sidebar" class="sidebar-button"><i class="fa fa-outdent"></i></a>
 
 </div>
 <!--Page Content Close-->
-
 
 <!--Footer-->
 <footer class="footer">
